@@ -1,3 +1,8 @@
+require "pry"
+
+
 def alphabetize(arr)
-  # code here
+  esperanto_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
+  arr.sort_by { |a| a.split("").map{ |char| esperanto_alph.index(char) } }
 end
